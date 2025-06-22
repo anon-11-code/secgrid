@@ -1,5 +1,5 @@
-http://192.168.1.108 -%e2 -r5 -c4 -s0 -%k -O . - -p1 "+*.css +*.js +*.png +*.jpg +*.jpeg +*.gif +*.webp +*.svg +*.woff +*.woff2 +*.ttf +*.eot" -https://www.googletagmanager.com/* -https://www.google-analytics.com/*
-File generated automatically on Sun, 22 Jun 2025 18:20:33, do NOT edit
+http://192.168.1.108 -%e2 -r5 -c4 -s0 -%k -O .
+File generated automatically on Sun, 22 Jun 2025 19:29:40, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)

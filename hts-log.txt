@@ -1,97 +1,36 @@
-HTTrack3.49-5 launched on Sun, 22 Jun 2025 18:20:33 at http://192.168.1.108 +*.css%20+*.js%20+*.png%20+*.jpg%20+*.jpeg%20+*.gif%20+*.webp%20+*.svg%20+*.woff%20+*.woff2%20+*.ttf%20+*.eot -https://www.googletagmanager.com/* -https://www.google-analytics.com/*
-(httrack http://192.168.1.108 -%e2 -r5 -c4 -s0 -%k -O . - -p1 "+*.css +*.js +*.png +*.jpg +*.jpeg +*.gif +*.webp +*.svg +*.woff +*.woff2 +*.ttf +*.eot" -https://www.googletagmanager.com/* -https://www.google-analytics.com/* )
+HTTrack3.49-5 launched on Sun, 22 Jun 2025 19:29:40 at http://192.168.1.108
+(httrack http://192.168.1.108 -%e2 -r5 -c4 -s0 -%k -O . )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/feed/ (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/comments/feed/ (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/ (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/pages/12 (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/xmlrpc.php?rsd (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2F (from 192.168.1.108/)
-18:22:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2F&format=xml (from 192.168.1.108/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/pages/31 (from 192.168.1.108/elementor-page-31/)
-18:25:33	Warning: 	Moved Permanently for 192.168.1.108/?p=31
-18:25:33	Warning: 	File has moved from 192.168.1.108/?p=31 to http://192.168.1.108/elementor-page-31/
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Felementor-page-31%2F (from 192.168.1.108/elementor-page-31/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Felementor-page-31%2F&format=xml (from 192.168.1.108/elementor-page-31/)
-18:25:33	Error: 	"Not Found" (404) at link 192.168.1.108/contact (from 192.168.1.108/elementor-page-31/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/pages/39 (from 192.168.1.108/privacy-policy/)
-18:25:33	Warning: 	Moved Permanently for 192.168.1.108/?p=39
-18:25:33	Warning: 	File has moved from 192.168.1.108/?p=39 to http://192.168.1.108/privacy-policy/
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fprivacy-policy%2F (from 192.168.1.108/privacy-policy/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fprivacy-policy%2F&format=xml (from 192.168.1.108/privacy-policy/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/pages/51 (from 192.168.1.108/terms-conditions/)
-18:25:33	Warning: 	Moved Permanently for 192.168.1.108/?p=51
-18:25:33	Warning: 	File has moved from 192.168.1.108/?p=51 to http://192.168.1.108/terms-conditions/
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fterms-conditions%2F (from 192.168.1.108/terms-conditions/)
-18:25:33	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fterms-conditions%2F&format=xml (from 192.168.1.108/terms-conditions/)
-18:25:33	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 9592 expected)) at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:25:38	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 9982 expected)) at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_Cmxpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:25:43	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 49513 expected)) at link https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:25:43	Error: 	"OK" (-1) at link 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/feed/ (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
-18:25:43	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/103 (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
-18:25:43	Warning: 	Moved Permanently for 192.168.1.108/?p=103
-18:25:43	Warning: 	File has moved from 192.168.1.108/?p=103 to http://192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/
-18:25:43	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fthreat-hunting-in-the-cloud-roactive-defense-strategies%2F (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
-18:25:43	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fthreat-hunting-in-the-cloud-roactive-defense-strategies%2F&format=xml (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
-18:25:43	Error: 	"Method Not Allowed" (405) at link 192.168.1.108/xmlrpc.php (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
-18:26:01	Error: 	"OK" (-1) at link 192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/feed/ (from 192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/)
-18:26:08	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/100 (from 192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/)
-18:26:09	Warning: 	Moved Permanently for 192.168.1.108/?p=100
-18:26:09	Warning: 	File has moved from 192.168.1.108/?p=100 to http://192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fpenetration-testing-meets-devsecops-securing-ci-cd-pipelines%2F (from 192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fpenetration-testing-meets-devsecops-securing-ci-cd-pipelines%2F&format=xml (from 192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/cpu-friendly-crypto-mining/feed/ (from 192.168.1.108/cpu-friendly-crypto-mining/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/96 (from 192.168.1.108/cpu-friendly-crypto-mining/)
-18:26:09	Warning: 	Moved Permanently for 192.168.1.108/?p=96
-18:26:09	Warning: 	File has moved from 192.168.1.108/?p=96 to http://192.168.1.108/cpu-friendly-crypto-mining/
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fcpu-friendly-crypto-mining%2F (from 192.168.1.108/cpu-friendly-crypto-mining/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fcpu-friendly-crypto-mining%2F&format=xml (from 192.168.1.108/cpu-friendly-crypto-mining/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/next-gen-cybersecurity/feed/ (from 192.168.1.108/next-gen-cybersecurity/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/91 (from 192.168.1.108/next-gen-cybersecurity/)
-18:26:09	Warning: 	Moved Permanently for 192.168.1.108/?p=91
-18:26:09	Warning: 	File has moved from 192.168.1.108/?p=91 to http://192.168.1.108/next-gen-cybersecurity/
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fnext-gen-cybersecurity%2F (from 192.168.1.108/next-gen-cybersecurity/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fnext-gen-cybersecurity%2F&format=xml (from 192.168.1.108/next-gen-cybersecurity/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/mastering-network-scanning-with-nmap/feed/ (from 192.168.1.108/mastering-network-scanning-with-nmap/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/83 (from 192.168.1.108/mastering-network-scanning-with-nmap/)
-18:26:09	Warning: 	Moved Permanently for 192.168.1.108/?p=83
-18:26:09	Warning: 	File has moved from 192.168.1.108/?p=83 to http://192.168.1.108/mastering-network-scanning-with-nmap/
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fmastering-network-scanning-with-nmap%2F (from 192.168.1.108/mastering-network-scanning-with-nmap/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fmastering-network-scanning-with-nmap%2F&format=xml (from 192.168.1.108/mastering-network-scanning-with-nmap/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/post-quantum-cryptography/feed/ (from 192.168.1.108/post-quantum-cryptography/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/posts/62 (from 192.168.1.108/post-quantum-cryptography/)
-18:26:09	Warning: 	Moved Permanently for 192.168.1.108/?p=62
-18:26:09	Warning: 	File has moved from 192.168.1.108/?p=62 to http://192.168.1.108/post-quantum-cryptography/
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fpost-quantum-cryptography%2F (from 192.168.1.108/post-quantum-cryptography/)
-18:26:09	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/oembed/1.0/embed?url=http%3A%2F%2F192.168.1.108%2Fpost-quantum-cryptography%2F&format=xml (from 192.168.1.108/post-quantum-cryptography/)
-18:26:09	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 9592 expected)) at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:26:09	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 9982 expected)) at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_Cmxpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:26:09	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 49513 expected)) at link https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:26:11	Error: 	"OK" (-1) at link 192.168.1.108/category/cybersecurity-defense/feed/ (from 192.168.1.108/category/cybersecurity-defense/)
-18:26:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/3 (from 192.168.1.108/category/cybersecurity-defense/)
-18:26:11	Error: 	"OK" (-1) at link 192.168.1.108/author/anon/feed/ (from 192.168.1.108/author/anon/)
-18:26:11	Error: 	"Not Found" (404) at link 192.168.1.108/wp-json/wp/v2/users/1 (from 192.168.1.108/author/anon/)
-18:26:11	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 18068 expected)) at link https://secure.gravatar.com/avatar/7f6c3492f93be359a214b58bc81891ca320a12767260912dc580593cc0c5406f?s=120&d=mm&r=g (from 192.168.1.108/author/anon/)
-18:27:10	Error: 	"Incorrect length (0 Bytes, 9592 expected)" (-4) after 2 retries at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:27:10	Error: 	"Incorrect length (0 Bytes, 9982 expected)" (-4) after 2 retries at link https://fonts.gstatic.com/s/orbitron/v34/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_Cmxpg.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:27:10	Error: 	"Incorrect length (0 Bytes, 49513 expected)" (-4) after 2 retries at link https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf (from https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap)
-18:27:10	Warning: 	Retry after error -4 (Incorrect length (0 Bytes, 18068 expected)) at link https://secure.gravatar.com/avatar/7f6c3492f93be359a214b58bc81891ca320a12767260912dc580593cc0c5406f?s=120&d=mm&r=g (from 192.168.1.108/author/anon/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/category/devsecops/feed/ (from 192.168.1.108/category/devsecops/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/10 (from 192.168.1.108/category/devsecops/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/category/penetration-testing/feed/ (from 192.168.1.108/category/penetration-testing/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/8 (from 192.168.1.108/category/penetration-testing/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/category/mining-automation/feed/ (from 192.168.1.108/category/mining-automation/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/6 (from 192.168.1.108/category/mining-automation/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/category/ethical-hacking-tools/feed/ (from 192.168.1.108/category/ethical-hacking-tools/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/4 (from 192.168.1.108/category/ethical-hacking-tools/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/category/cryptography/feed/ (from 192.168.1.108/category/cryptography/)
-18:27:11	Error: 	"OK" (-1) at link 192.168.1.108/wp-json/wp/v2/categories/9 (from 192.168.1.108/category/cryptography/)
-18:27:12	Error: 	"Incorrect length (0 Bytes, 18068 expected)" (-4) after 2 retries at link https://secure.gravatar.com/avatar/7f6c3492f93be359a214b58bc81891ca320a12767260912dc580593cc0c5406f?s=120&d=mm&r=g (from 192.168.1.108/author/anon/)
+19:31:26	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from 192.168.1.108/)
+19:35:34	Error: 	"Not Found" (404) at link 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/img/vimeo-play.png (from 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/lightgallery.min.css?ver=1.7.1026)
+19:35:34	Error: 	"Not Found" (404) at link 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/img/video-play.png (from 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/lightgallery.min.css?ver=1.7.1026)
+19:35:34	Error: 	"Not Found" (404) at link 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/img/youtube-play.png (from 192.168.1.108/wp-content/plugins/royal-elementor-addons/assets/css/lib/lightgallery/lightgallery.min.css?ver=1.7.1026)
+19:35:38	Warning: 	Moved Permanently for 192.168.1.108/?p=31
+19:35:38	Warning: 	File has moved from 192.168.1.108/?p=31 to http://192.168.1.108/elementor-page-31/
+19:35:38	Error: 	"Not Found" (404) at link 192.168.1.108/contact (from 192.168.1.108/elementor-page-31/)
+19:35:38	Warning: 	Moved Permanently for 192.168.1.108/?p=39
+19:35:38	Warning: 	File has moved from 192.168.1.108/?p=39 to http://192.168.1.108/privacy-policy/
+19:35:38	Warning: 	Moved Permanently for 192.168.1.108/?p=51
+19:35:38	Warning: 	File has moved from 192.168.1.108/?p=51 to http://192.168.1.108/terms-conditions/
+19:35:38	Warning: 	Moved Permanently for 192.168.1.108/?p=103
+19:35:38	Warning: 	File has moved from 192.168.1.108/?p=103 to http://192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/
+19:35:38	Error: 	"Method Not Allowed" (405) at link 192.168.1.108/xmlrpc.php (from 192.168.1.108/threat-hunting-in-the-cloud-roactive-defense-strategies/)
+19:35:55	Warning: 	Moved Permanently for 192.168.1.108/?p=100
+19:35:55	Warning: 	File has moved from 192.168.1.108/?p=100 to http://192.168.1.108/penetration-testing-meets-devsecops-securing-ci-cd-pipelines/
+19:35:56	Warning: 	Moved Permanently for 192.168.1.108/?p=96
+19:35:56	Warning: 	File has moved from 192.168.1.108/?p=96 to http://192.168.1.108/cpu-friendly-crypto-mining/
+19:35:58	Warning: 	Moved Permanently for 192.168.1.108/?p=91
+19:35:58	Warning: 	File has moved from 192.168.1.108/?p=91 to http://192.168.1.108/next-gen-cybersecurity/
+19:35:59	Warning: 	Moved Permanently for 192.168.1.108/?p=83
+19:35:59	Warning: 	File has moved from 192.168.1.108/?p=83 to http://192.168.1.108/mastering-network-scanning-with-nmap/
+19:35:59	Warning: 	Moved Permanently for 192.168.1.108/?p=62
+19:35:59	Warning: 	File has moved from 192.168.1.108/?p=62 to http://192.168.1.108/post-quantum-cryptography/
+19:35:59	Error: 	"Not Found" (404) at link 192.168.1.108/wp-json/wp/v2/users/1 (from 192.168.1.108/author/anon/)
 
-HTTrack Website Copier/3.49-5 mirror complete in 6 minutes 39 seconds : 99 links scanned, 22 files written (3865152 bytes overall) [1124451 bytes received at 2818 bytes/sec], 4033864 bytes transferred using HTTP compression in 19 files, ratio 25%, 1.1 requests per connection
-(60 errors, 26 warnings, 0 messages)
+HTTrack Website Copier/3.49-5 mirror complete in 6 minutes 39 seconds : 232 links scanned, 216 files written (16054119 bytes overall) [8011697 bytes received at 20079 bytes/sec], 12295329 bytes transferred using HTTP compression in 130 files, ratio 26%, 5.2 requests per connection
+(7 errors, 18 warnings, 0 messages)

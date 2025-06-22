@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Cryptography &#8211; SecGrid</title>
+	<atom:link href="http://192.168.1.108/category/cryptography/feed/" rel="self" type="application/rss+xml" />
+	<link>http://192.168.1.108</link>
+	<description></description>
+	<lastBuildDate>Tue, 17 Jun 2025 17:16:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.1</generator>
+
+<image>
+	<url>http://192.168.1.108/wp-content/uploads/2025/06/cropped-icon-32x32.png</url>
+	<title>Cryptography &#8211; SecGrid</title>
+	<link>http://192.168.1.108</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>&#8220;Post-Quantum Cryptography&#8221;</title>
+		<link>http://192.168.1.108/post-quantum-cryptography/</link>
+					<comments>http://192.168.1.108/post-quantum-cryptography/#respond</comments>
+		
+		<dc:creator><![CDATA[anon]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2025 17:03:10 +0000</pubDate>
+				<category><![CDATA[Cryptography]]></category>
+		<guid isPermaLink="false">http://192.168.1.108/?p=62</guid>
+
+					<description><![CDATA[Post-Quantum Cryptography: Securing the Future in 2030 June 15, 2025 Cryptography As quantum computing advances, traditional cryptographic algorithms like RSA and ECC face obsolescence. By 2030, quantum computers could break these systems, necessitating post-quantum cryptography (PQC). This tutorial introduces PQC and demonstrates implementing a lattice-based algorithm using Python, preparing your systems for a quantum future. Why Post-Quantum Cryptography? PQC algorithms resist quantum attacks by leveraging mathematical problems like lattice-based or code-based structures, which are computationally hard for both classical and quantum machines. NIST’s ongoing PQC standardization (e.g., Kyber, Dilithium) ensures these algorithms are robust and efficient. Implementing Kyber in Python Let’s implement a basic key encapsulation mechanism (KEM) using the Kyber algorithm with the `oqs-python` library, a wrapper for Open Quantum Safe’s liboqs. pip install oqs-python import oqs # Initialize Kyber KEM kem = oqs.KeyEncapsulation("Kyber512") # Generate keypair public_key, secret_key = kem.generate_keypair() # Encapsulate a shared secret ciphertext, shared_secret_server = kem.encap_secret(public_key) # Decapsulate to retrieve the shared secret shared_secret_client = kem.decap_secret(ciphertext, secret_key) print("Shared secret matches:", shared_secret_server == shared_secret_client) This code generates a keypair, encapsulates a shared secret, and verifies decapsulation. Kyber512 offers a balance of security and performance for 2030’s quantum threats. Deployment Considerations Hybrid Cryptography: Combine PQC with classical algorithms during the transition (e.g., Kyber + ECDSA). Performance Tuning: Optimize for low-latency applications using hardware acceleration. Standards Compliance: Follow NIST’s finalized PQC standards (expected by 2025). PQC is the cornerstone of future-proof security. Start experimenting with libraries like liboqs to prepare your infrastructure for the quantum era, ensuring SecGrid’s defenses remain unbreakable in 2030 and beyond.]]></description>
+										<content:encoded><![CDATA[<p><canvas id="hex-matrix" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.15;"></canvas></p>
+<article style="background: rgba(18, 18, 18, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(0, 255, 231, 0.1); border-radius: 12px; box-shadow: 0 0 20px rgba(0, 255, 231, 0.2); padding: 2rem; max-width: 800px; margin: 0 auto; animation: fadeIn 2s;">
+<h1 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; background: linear-gradient(90deg, #33cc33, #ff00ff, #33cc33); background-size: 200% auto; color: #fff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: neonFlow 8s linear infinite; text-shadow: 0 0 10px rgba(51, 204, 51, 0.5); margin-bottom: 1rem;">
+      Post-Quantum Cryptography: Securing the Future in 2030<br />
+    </h1>
+<p>      June 15, 2025<br />
+      Cryptography</p>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      As quantum computing advances, traditional cryptographic algorithms like RSA and ECC face obsolescence. By 2030, quantum computers could break these systems, necessitating post-quantum cryptography (PQC). This tutorial introduces PQC and demonstrates implementing a lattice-based algorithm using Python, preparing your systems for a quantum future.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #33cc33; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Why Post-Quantum Cryptography?</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      PQC algorithms resist quantum attacks by leveraging mathematical problems like lattice-based or code-based structures, which are computationally hard for both classical and quantum machines. NIST’s ongoing PQC standardization (e.g., Kyber, Dilithium) ensures these algorithms are robust and efficient.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #33cc33; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Implementing Kyber in Python</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Let’s implement a basic key encapsulation mechanism (KEM) using the Kyber algorithm with the `oqs-python` library, a wrapper for Open Quantum Safe’s liboqs.
+    </p>
+<pre style="background: #1e1e2e; color: #33cc33; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+pip install oqs-python
+import oqs
+# Initialize Kyber KEM
+kem = oqs.KeyEncapsulation("Kyber512")
+# Generate keypair
+public_key, secret_key = kem.generate_keypair()
+# Encapsulate a shared secret
+ciphertext, shared_secret_server = kem.encap_secret(public_key)
+# Decapsulate to retrieve the shared secret
+shared_secret_client = kem.decap_secret(ciphertext, secret_key)
+print("Shared secret matches:", shared_secret_server == shared_secret_client)
+    </pre>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      This code generates a keypair, encapsulates a shared secret, and verifies decapsulation. Kyber512 offers a balance of security and performance for 2030’s quantum threats.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #33cc33; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Deployment Considerations</h2>
+<ul style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem; padding-left: 1.5rem;">
+<li><strong>Hybrid Cryptography</strong>: Combine PQC with classical algorithms during the transition (e.g., Kyber + ECDSA).</li>
+<li><strong>Performance Tuning</strong>: Optimize for low-latency applications using hardware acceleration.</li>
+<li><strong>Standards Compliance</strong>: Follow NIST’s finalized PQC standards (expected by 2025).</li>
+</ul>
+<p style="color: #d0d0ff; line-height: 1.6;">
+      PQC is the cornerstone of future-proof security. Start experimenting with libraries like liboqs to prepare your infrastructure for the quantum era, ensuring SecGrid’s defenses remain unbreakable in 2030 and beyond.
+    </p>
+</article>
+<style>
+  @keyframes neonFlow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://192.168.1.108/post-quantum-cryptography/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
