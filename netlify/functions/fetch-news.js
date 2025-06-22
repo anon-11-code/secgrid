@@ -1,36 +1,72 @@
-const normalizeUrl = (url) => {
-  if (url.startsWith('//')) return 'https:' + url;
-  if (!url.startsWith('http')) return 'https://' + url.replace(/^\/+/, '');
-  return url;
-};
+const fetch = require('node-fetch');
+const Parser = require('rss-parser');
+const parser = new Parser();
 
-exports.handler = async function (event, context) {
+const FEEDS = [
+  // Global tech and cybersecurity
+  'https://www.wired.com/feed/rss', // Wired tech news
+  'https://techcrunch.com/feed/', // TechCrunch
+  'https://www.theverge.com/rss/index.xml', // The Verge
+  'https://www.zdnet.com/news/rss.xml', // ZDNet
+  // African tech news
+  'https://techpoint.africa/feed/', // Techpoint Africa (Nigeria)
+  'https://disrupt-africa.com/feed/', // Disrupt Africa (pan-African tech)
+  'https://technext24.com/feed/', // TechNext (Nigeria)
+  // GitHub
+  'https://github.blog/feed/', // GitHub Blog
+  'https://github.com/trending/developers.rss', // GitHub Trending Developers
+  'https://github.com/security-advisories.atom' // GitHub Security Advisories (kept from your list)
+];
+
+exports.handler = async function(event, context) {
   try {
     const allItems = [];
 
-    for (const feed of feeds) {
+    for (const feedUrl of FEEDS) {
       try {
-        const parsed = await parser.parseURL(feed);
-        parsed.items.slice(0, 5).forEach(item => {
+        const feed = await parser.parseURL(feedUrl);
+        const base = new URL(feedUrl);
+
+        feed.items.forEach(item => {
+          let fullLink = item.link;
+          try {
+            fullLink = fullLink?.startsWith('http') ? fullLink : new URL(item.link, base).href;
+          } catch (linkError) {
+            console.error('Link parsing error:', item.link, linkError);
+            fullLink = '#'; // Fallback
+          }
           allItems.push({
-            title: item.title,
-            link: normalizeUrl(item.link)
+            title: item.title || 'No title',
+            link: fullLink,
+            pubDate: item.pubDate || new Date().toISOString(),
+            source: feed.title || base.hostname,
           });
         });
-      } catch (innerErr) {
-        console.error(`Failed to fetch ${feed}:`, innerErr);
+      } catch (feedError) {
+        console.error('Feed error:', feedUrl, feedError);
       }
     }
 
+    if (!allItems.length) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify([{ title: 'Check back later – no headlines found.', link: '#', source: 'System', pubDate: new Date().toISOString() }]),
+      };
+    }
+
+    allItems.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+    const latestItems = allItems.slice(0, 10);
+
     return {
       statusCode: 200,
-      body: JSON.stringify(allItems)
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(latestItems),
     };
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error('General error:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Error fetching RSS feeds" })
+      body: JSON.stringify([{ title: 'Error loading news feed.', link: '#', source: 'System', pubDate: new Date().toISOString() }]),
     };
   }
 };
