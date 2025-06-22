@@ -1,6 +1,5 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-pl26984235.profitableratecpm.com	TRUE	/	FALSE	1999999999	4b4e7ab587d59b22ad7bcd2439afc363_hd-43082-nv	0
+pl26984235.profitableratecpm.com	TRUE	/	FALSE	1999999999	4b4e7ab587d59b22ad7bcd2439afc363_hd-43082-nv	1
 pl26984235.profitableratecpm.com	TRUE	/	FALSE	1999999999	SameSite	None
-.w3.org	TRUE	/	FALSE	1999999999	__cf_bm	YSMGynYlKIUlFuM2E9ISjTyUfcFAY4NDoTWBA8HnW7g-1750620935-1.0.1.1-K0t_uVpLlBUBGxF4HjR4.Z.KSlHmAuFosRxuN_e9pHKjiZO8poUPyE1ZP2hy633E04HxTClJ88hy4j0eMlEWDgK6J_fdVQQmEx1nTPpnzSI
 
