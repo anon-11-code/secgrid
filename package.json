@@ -1,7 +1,21 @@
 {
+  "name": "secgrid-static",
+  "version": "1.0.0",
+  "description": "SecGrid Static Website - Cybersecurity, Hacking, Privacy Tutorials, and Tools",
+  "author": "Alpha",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve ./",
+    "build": "echo 'No build step needed for static site.'",
+    "generate:sitemap": "npx sitemap-generator https://secgrid.netlify.app --max-depth 5 --filepath ./sitemap.xml",
+    "deploy": "netlify deploy --prod --dir=./",
+    "preview": "netlify dev"
+  },
   "dependencies": {
     "node-fetch": "^2.6.1",
-    "rss-parser": "^3.13.0",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
     "sitemap-generator-cli": "^6.2.6"
   }
 }

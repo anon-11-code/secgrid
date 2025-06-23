@@ -12,22 +12,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (Use Node 18 for compatibility)
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'
 
-      - name: Install sitemap-generator-cli
-        run: npm install -g sitemap-generator-cli
-
-      - name: Verify sitemap-generator-cli installation
-        run: |
-          npm list -g sitemap-generator-cli
-          which sitemap-generator-cli
-          sitemap-generator-cli --version
+      - name: Install sitemap-generator-cli locally
+        run: npm install sitemap-generator-cli
 
       - name: Generate Sitemap
-        run: sitemap-generator-cli https://secgrid.netlify.app --max-depth 5 --filepath ./sitemap.xml
+        run: npx sitemap-generator-cli https://secgrid.netlify.app --max-depth 5 --filepath ./sitemap.xml
 
       - name: Commit Sitemap
         run: |

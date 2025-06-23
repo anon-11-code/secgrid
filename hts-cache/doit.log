@@ -1,5 +1,5 @@
 http://192.168.1.108 -O . +*.192.168.1.108/* -%e2 -r3 - -s0 -v
-File generated automatically on Mon, 23 Jun 2025 09:03:09, do NOT edit
+File generated automatically on Mon, 23 Jun 2025 09:51:34, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)
