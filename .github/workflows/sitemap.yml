@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -20,9 +20,14 @@ jobs:
       - name: Install sitemap-generator-cli
         run: npm install -g sitemap-generator-cli
 
-      - name: Generate Sitemap
+      - name: Verify sitemap-generator-cli installation
         run: |
-          npx sitemap-generator https://secgrid.netlify.app --max-depth 5 --filepath ./sitemap.xml
+          npm list -g sitemap-generator-cli
+          which sitemap-generator-cli
+          sitemap-generator-cli --version
+
+      - name: Generate Sitemap
+        run: sitemap-generator-cli https://secgrid.netlify.app --max-depth 5 --filepath ./sitemap.xml
 
       - name: Commit Sitemap
         run: |
@@ -32,3 +37,7 @@ jobs:
           git commit -m "Auto-update sitemap [skip ci]" || echo "No changes"
           git push
 
+      - name: Notify Search Engines
+        run: |
+          curl https://www.google.com/ping?sitemap=https://secgrid.netlify.app/sitemap.xml
+          curl https://www.bing.com/ping?sitemap=https://secgrid.netlify.app/sitemap.xml

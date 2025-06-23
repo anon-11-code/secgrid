@@ -12,7 +12,7 @@
 	<atom:link href="http://192.168.1.108/feed/" rel="self" type="application/rss+xml" />
 	<link>http://192.168.1.108</link>
 	<description></description>
-	<lastBuildDate>Mon, 23 Jun 2025 06:40:14 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 23 Jun 2025 08:00:16 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,157 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>&#8220;Mastering mining with XMRIG (randomx)&#8221;</title>
+		<link>http://192.168.1.108/mastering-mining-with-xmrig-randomx/</link>
+					<comments>http://192.168.1.108/mastering-mining-with-xmrig-randomx/#respond</comments>
+		
+		<dc:creator><![CDATA[anon]]></dc:creator>
+		<pubDate>Mon, 23 Jun 2025 08:00:16 +0000</pubDate>
+				<category><![CDATA[Mining & Automation]]></category>
+		<guid isPermaLink="false">http://192.168.1.108/?p=210</guid>
+
+					<description><![CDATA[Mastering Mining &#038; Automation with XMRig and RandomX: 2025 Insights June 23, 2025 Mining &#038; Automation In 2025, cryptocurrency mining evolves with a focus on efficiency and decentralization. XMRig, a leading open-source miner, paired with the RandomX algorithm, offers a CPU-friendly solution for Monero (XMR) mining. This guide explores automation techniques, hardware optimization, and best practices to maximize your mining output while aligning with SecGrid’s futuristic cybersecurity ethos. Why XMRig and RandomX? RandomX’s memory-hard design resists ASIC dominance, leveling the playing field for CPU miners. XMRig enhances this with multi-threaded performance, JSON configuration, and HTTP API support for real-time monitoring. Ideal for home setups or automated mining farms, it supports decentralization in 2025’s crypto landscape. Installation and Setup Install XMRig on a Linux system (e.g., Ubuntu): sudo apt-get update sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev git clone https://github.com/xmrig/xmrig.git cd xmrig mkdir build &#038;& cd build cmake .. make Run XMRig with a basic config: ./xmrig --config=config.json Configuring for Automation Edit `config.json` for pool and CPU settings: { "pools": [ { "url": "pool.supportxmr.com:5555", "user": "YOUR_WALLET_ADDRESS", "pass": "x" } ], "cpu": { "enabled": true, "max-threads-hint": 75, "priority": 2 }, "api": { "enabled": true, "port": 3333 } } Use HTTP API to monitor via `http://localhost:3333/1/summary`. Optimizing CPU Mining Maximize efficiency with these commands: ./xmrig --algo=randomx --threads=$(nproc) --av=1 &#8211; `&#8211;threads=$(nproc)`: Uses all CPU cores. &#8211; `&#8211;av=1`: Enables AVX instructions for performance. Automating with Cron Schedule mining restarts: crontab -e 0 2 * * * /path/to/xmrig --config=config.json >> /var/log/xmrig.log 2>&#038;1 Runs daily at 2 AM, logging output. Future of CPU Mining By 2030, RandomX and XMRig may integrate AI-driven optimization and energy-efficient algorithms. Stay ahead with SecGrid’s cutting-edge tools, ensuring sustainable mining in a decentralized world. Start your journey today!]]></description>
+										<content:encoded><![CDATA[<div style="background: linear-gradient(135deg, #0a0c1a, #1a2a3a); color: #d0d0ff; font-family: 'Roboto Mono', monospace; overflow-x: hidden; padding: 2rem 1rem; position: relative;">
+  <canvas id="digital-rain" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.3;"></canvas></p>
+<article style="background: rgba(18, 18, 18, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(0, 255, 231, 0.1); border-radius: 12px; box-shadow: 0 0 20px rgba(0, 255, 231, 0.2); padding: 2rem; max-width: 800px; margin: 0 auto; animation: fadeIn 2s;">
+<h1 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; background: linear-gradient(90deg, #00cc99, #00b4ff, #00e7b4); background-size: 200% auto; color: #fff; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: neonFlow 8s linear infinite; text-shadow: 0 0 10px rgba(0, 204, 153, 0.5); margin-bottom: 1rem;">
+      Mastering Mining &#038; Automation with XMRig and RandomX: 2025 Insights<br />
+    </h1>
+<div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+      <span style="color: #808080; font-size: 0.9rem;">June 23, 2025</span><br />
+      <span style="color: #00cc99; font-size: 0.9rem; border: 1px solid #00cc99; padding: 0.3rem 0.8rem; border-radius: 5px;">Mining &#038; Automation</span>
+    </div>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      In 2025, cryptocurrency mining evolves with a focus on efficiency and decentralization. XMRig, a leading open-source miner, paired with the RandomX algorithm, offers a CPU-friendly solution for Monero (XMR) mining. This guide explores automation techniques, hardware optimization, and best practices to maximize your mining output while aligning with SecGrid’s futuristic cybersecurity ethos.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Why XMRig and RandomX?</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      RandomX’s memory-hard design resists ASIC dominance, leveling the playing field for CPU miners. XMRig enhances this with multi-threaded performance, JSON configuration, and HTTP API support for real-time monitoring. Ideal for home setups or automated mining farms, it supports decentralization in 2025’s crypto landscape.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Installation and Setup</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Install XMRig on a Linux system (e.g., Ubuntu):
+    </p>
+<pre style="background: #1e1e2e; color: #00cc99; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+sudo apt-get update
+sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev
+git clone https://github.com/xmrig/xmrig.git
+cd xmrig
+mkdir build && cd build
+cmake ..
+make
+    </pre>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Run XMRig with a basic config:
+    </p>
+<pre style="background: #1e1e2e; color: #00cc99; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+./xmrig --config=config.json
+    </pre>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Configuring for Automation</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Edit `config.json` for pool and CPU settings:
+    </p>
+<pre style="background: #1e1e2e; color: #00cc99; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+{
+  "pools": [
+    { "url": "pool.supportxmr.com:5555", "user": "YOUR_WALLET_ADDRESS", "pass": "x" }
+  ],
+  "cpu": {
+    "enabled": true,
+    "max-threads-hint": 75,
+    "priority": 2
+  },
+  "api": { "enabled": true, "port": 3333 }
+}
+    </pre>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Use HTTP API to monitor via `http://localhost:3333/1/summary`.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Optimizing CPU Mining</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Maximize efficiency with these commands:
+    </p>
+<pre style="background: #1e1e2e; color: #00cc99; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+./xmrig --algo=randomx --threads=$(nproc) --av=1
+    </pre>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      &#8211; `&#8211;threads=$(nproc)`: Uses all CPU cores.<br />
+      &#8211; `&#8211;av=1`: Enables AVX instructions for performance.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Automating with Cron</h2>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Schedule mining restarts:
+    </p>
+<pre style="background: #1e1e2e; color: #00cc99; padding: 1rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+crontab -e
+0 2 * * * /path/to/xmrig --config=config.json >> /var/log/xmrig.log 2>&1
+    </pre>
+<p style="color: #d0d0ff; line-height: 1.6; margin-bottom: 1rem;">
+      Runs daily at 2 AM, logging output.
+    </p>
+<h2 style="font-family: 'Orbitron', sans-serif; color: #00cc99; font-size: 1.6rem; margin: 1.5rem 0 1rem;">Future of CPU Mining</h2>
+<p style="color: #d0d0ff; line-height: 1.6;">
+      By 2030, RandomX and XMRig may integrate AI-driven optimization and energy-efficient algorithms. Stay ahead with SecGrid’s cutting-edge tools, ensuring sustainable mining in a decentralized world. Start your journey today!
+    </p>
+</article>
+</div>
+<style>
+  @keyframes neonFlow {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<p><script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('digital-rain');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const chars = '01';
+      const fontSize = 14;
+      const columns = Math.floor(canvas.width / fontSize);
+      const drops = Array(columns).fill(0);
+      const speeds = Array(columns).fill(0).map(() => Math.random() * 0.5 + 0.2);
+      function draw() {
+        ctx.fillStyle = 'rgba(10, 12, 26, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#00cc99';
+        ctx.font = `${fontSize}px 'Roboto Mono', monospace`;
+        drops.forEach((y, i) => {
+          const text = chars.charAt(Math.floor(Math.random() * chars.length));
+          const x = i * fontSize;
+          ctx.fillText(text, x, y * fontSize);
+          drops[i] += speeds[i];
+          if (y * fontSize > canvas.height && Math.random() > 0.99) {
+            drops[i] = 0;
+          }
+        });
+      }
+      setInterval(draw, 50);
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        drops.length = Math.floor(canvas.width / fontSize);
+        drops.fill(0);
+        speeds.length = drops.length;
+        speeds.fill(0).map(() => Math.random() * 0.5 + 0.2);
+      });
+    }
+  });
+</script></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://192.168.1.108/mastering-mining-with-xmrig-randomx/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>&#8220;Encryption Mastery: How to Protect Your Devices, Networks, and Data from Surveillance&#8221;</title>
 		<link>http://192.168.1.108/encryption-mastery-how-to-protect-your-devices-networks-and-data-from-surveillance/</link>
 					<comments>http://192.168.1.108/encryption-mastery-how-to-protect-your-devices-networks-and-data-from-surveillance/#respond</comments>
