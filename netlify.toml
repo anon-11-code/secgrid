@@ -7,6 +7,27 @@
   node_bundler = "esbuild"
 
 [[redirects]]
+  # Enforce non-www canonicalization (optional but recommended)
+  from = "https://www.secgrid.netlify.app/*"
+  to = "https://secgrid.netlify.app/:splat"
+  status = 301
+  force = true
+
+  # Force removal of trailing /index.html ? /
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+  # SPA routing (keep this for Netlify static sites with JS routers)
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:;"
